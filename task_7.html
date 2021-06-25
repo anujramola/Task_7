@@ -1,0 +1,116 @@
+
+
+
+
+ <head>
+<div class="floating"
+     style=
+	 "height: 50px;
+	  text-decoration-color: burlywood;
+	  width: 150px; 
+	  background: rgb(229, 192, 213);
+	  font-family: Georgia, 'Times New Roman', Times, serif;
+	  font-style: oblique;
+	  font-size: larger;
+	  text-align: center;
+	  text-shadow: 0vmax;
+	  border:10px solid rgb(23, 138, 167);
+	  border-radius: 50px;
+	  border-color: rgb(128, 186, 212);">
+	 <link  href="task7.css" rel="stylesheet" type="text/css">
+	 <b>DOCKER WEBAPP</b>
+</div>
+</head>
+
+<div class="glow"
+<link  href="task7.css" rel="stylesheet" type="text/css"> 
+</div>
+
+
+
+<style> 
+	body {
+	  background-image: url("https://blog.chun.no/images/2014-06-01-docker.gif");
+	  background-size: 30% ;
+	  background-color: rgba(20, 19, 19, 0.733); 
+	}
+	</style>
+<br>
+</br>
+
+<script>
+function lw() {
+var i = document.getElementById("in1").value 
+var xhr = new XMLHttpRequest();
+xhr.open("GET" , "http://192.168.101.9/cgi-bin/task7.py?x=" + i, true);
+xhr.send();
+xhr.onload = function() {
+		var response = xhr.responseText;
+		document.getElementById("d1").innerHTML = response;
+}
+
+}
+</script>
+
+
+
+<h1 class="glow"><b>Enter the command below</b>
+	<link  href="task7.css" rel="stylesheet" type="text/css"> 
+
+</h1>
+     
+
+
+
+<br>
+<input id="in1" 
+style="width: 100%; 
+height:50px; font-size:20px;
+text-align:center ;
+
+border:5px solid rgb(139, 22, 22);"/>
+<br />
+
+
+
+
+<br>
+<button 
+onclick="lw()" 
+style="font-size: 30px; 
+border:5px solid rgb(133, 161, 192); 
+font-style: italic;
+margin-left: 550px;
+margin-top: 30px;
+
+background-color: LightGray;"> 
+
+<b>ENTER</b>
+</button>
+</br>
+
+
+
+<style>
+div#d1 {
+background-color: rgb(233, 122, 122);
+border:5px solid rgb(231, 207, 207);
+padding-top:50px;
+padding-bottom:50px;
+
+text-align: center;
+font-family:"Lucida Console","Courier New",monospace;
+font-size: 15px;
+}
+</style>
+
+<br>
+<pre>
+<div id="d1"> Output display </div>
+</pre>
+</br>
+
+
+
+
+</body>
